@@ -1,0 +1,105 @@
+---
+meta-title: Реєстрація
+title: Реєстрація на сайті
+layout: default
+header: true
+header-search: false
+header-bar: false
+adv-top: false
+footer: false
+---
+
+<div class="uk-section">
+	<div class="uk-container uk-container-expand uk-animation-slide-bottom-small uk-width-large">
+	<h1 class="uk-margin-medium uk-text-center">{{title}}</h1>
+
+	<form class="uk-form-stacked uk-grid-small uk-grid" uk-grid>
+		<div class="uk-text-xsmall uk-width-1-2"><b>Компанія, резидент України</b></div>
+		<div class="uk-text-small uk-width-1-2 uk-text-right"><a href="registration-request.html">Інша країна</a></div>
+
+	    <div class=" uk-width-1-1">
+	    	<!--<label class="uk-form-label" for="form-company"></label>-->
+	        <div class="uk-form-controls">
+	            <input class="uk-input" id="form-company" type="text" placeholder="Назва" uk-tooltip="title: Назва компанії і форма власності після коми. Наприклад: Прогрес, ТОВ; Сидоренко О. М., ФОП; pos: bottom-left; delay: 500">
+	        </div>
+	    </div>
+
+	    <div class="uk-margin uk-width-1-1">
+	    	<!--<label class="uk-form-label" for="form-region"></label>-->
+	        <div class="uk-form-controls">
+	            <select class="uk-select" id="form-region">
+                    <option >Регіон</option>
+                    <option> Київ </option>
+                    <option> Київська область </option>
+                    <option> Вінницька область </option>
+                    <option> Волинська область </option>
+                    <option> Дніпропетровська область </option>
+                    <option> Донецька область </option>
+                    <option> Житомирська область </option>
+                    <option> Закарпатська область </option>
+                    <option> Запорізька область </option>
+                    <option> Івано-Франківська область </option>
+                    <option> Кіровоградська область </option>
+                    <option> Крим АР </option>
+                    <option> Луганська область </option>
+                    <option> Львівська область </option>
+                    <option> Миколаївська область </option>
+                    <option> Одеська область </option>
+                    <option> Полтавська область </option>
+                    <option> Рівненська область </option>
+                    <option> Сумська область </option>
+                    <option> Тернопільська область </option>
+                    <option> Харківська область </option>
+                    <option> Херсонська область </option>
+                    <option> Хмельницька область </option>
+                    <option> Черкаська область </option>
+                    <option> Чернігівська область </option>
+                    <option> Чернівецька область </option>                                            
+				</select>
+	        </div>
+	    </div>
+		
+		<p class="uk-text-xsmall uk-width-1-1" ><b>Представник компанії</b></p>
+		<div class="uk-width-1-2@s">
+			<!--<label class="uk-form-label" for="form-name"></label>-->
+	        <div class="uk-form-controls">
+	            <input class="uk-input" id="form-name" type="text" placeholder="Ім'я">
+	        </div>
+	    </div>
+
+	    <div class="uk-width-1-2@s">
+	    	<!--<label class="uk-form-label" for="form-secondname"></label>-->
+	        <div class="uk-form-controls">
+	            <input class="uk-input" id="form-secondname" type="text" placeholder="Прізвище">
+	        </div>
+	    </div>
+
+	    <div class="uk-width-1-1">   
+	    	<!--<label class="uk-form-label" for="form-email"></label>-->
+	        <div class="uk-form-controls">
+	            <input class="uk-input" id="form-email" type="email" placeholder="Електронна пошта" uk-tooltip="title: Вказаний E-mail використовується для входу у кабінет та для отримання повідомлень від потенційних клієнтів. На сайті не відображається; pos: bottom-left; delay: 500;">
+	        </div>
+	        
+	    </div>
+
+	    <div class="uk-margin uk-width-1-1">
+	    	<!--<label class="uk-form-label" for="form-password"></label>-->
+	        <div class="uk-form-controls">
+	            <input class="uk-input" id="form-password" type="password" placeholder="Придумайте пароль">
+	        </div>
+	    </div>
+
+	    <div class="uk-margin uk-width-1-1">
+            <p class="uk-text-small uk-text-center">Реєструючись ви приймаєте <br><a href="#modal-overflow-degreement" uk-toggle>користувацьку угоду</a></p>
+        </div>
+		
+
+        <div class="uk-margin uk-width-1-1 uk-text-center">
+            <button class="uk-button uk-button-primary">✔ Прийняти та зареєструватися</button>
+        </div>
+
+	</form>
+
+	{{> modal-agreement}}
+	</div>
+</div>

@@ -1,0 +1,17 @@
+<div class="uk-container uk-column-1-2@s uk-margin">
+	<ul class="uk-list">
+	{{#ifpage 'category' 'category-in'}}
+		<li><a href="category-in.html"><b>Сырье, ингредиенты для пищевой промышленности</b></a></li>
+		<li>
+			<ul class="uk-list uk-padding-remove">
+				{{#each items}}
+					<li><a href="product-list.html">{{category}}</a></li>
+				{{/each}}
+			</ul>
+		</li>
+	{{/ifpage}}
+	</ul>
+</div><!--/categories-->
+
+
+

@@ -1,0 +1,43 @@
+<!-- This is the modal -->
+<div id="modal-mail-administration" class="" uk-modal>
+    <div class="uk-modal-dialog">
+        <div class="uk-modal-body" uk-overflow-auto>
+            <h2 class="uk-modal-title uk-margin uk-text-center">Запитання адміністрації Bizera</h2>
+            <form class="uk-form uk-grid-small uk-grid" uk-grid>
+                    <div class="uk-width-1-1 uk-margin-bottom">   
+                        <div class="uk-form-controls">
+                            <textarea class="uk-textarea" rows="5" id="form-message" type="email" placeholder="Напишіть тут ваше запитання"></textarea>
+                        </div>
+                    </div>
+                    
+                    <p class="uk-text-xsmall uk-width-1-1" ><b>Як з вами зв'язатися</b></p>
+                    <div class="uk-width-1-1">
+                        <div class="uk-form-controls">
+                            <input class="uk-input uk-width-medium@s" id="form-name" type="text" placeholder="Ім'я">
+                        </div>
+                    </div>
+                    
+                    <div class="uk-width-1-1">   
+                        <div class="uk-form-controls">
+                            <input class="uk-input uk-width-medium@s" id="form-email" type="email" placeholder="Електронна пошта">
+                        </div>  
+                    </div>
+
+                    <div class="uk-width-1-1">   
+                        <div class="uk-form-controls">
+                            <input class="uk-input uk-width-medium@s" id="form-phone" type="email" placeholder="Телефон">
+                        </div>
+                    </div>
+        
+                    
+        
+            </form>
+        </div>
+            
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-default  uk-modal-close" type="button">Відмінити</button>
+            <button class="uk-button uk-button-secondary  uk-modal-close" type="button" onclick="UIkit.notification({timeout: 2000, message: '<span uk-icon=\'icon: check\'></span> Ваше повідомлення надіслано', status: 'success'})">Надіслати</button>
+            
+        </div>     
+    </div>
+</div>

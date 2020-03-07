@@ -1,0 +1,42 @@
+---
+meta-title: Вхід у кабінет
+title: Вхід у кабінет
+layout: default
+header: true
+header-search: false
+header-bar: false
+adv-top: false
+footer: false
+---
+
+<div class="uk-section">
+	<div class="uk-container uk-container-expand uk-animation-slide-bottom-small uk-width-large">
+		<h1 class="uk-margin uk-text-center">{{title}}</h1>
+		
+		<form class="uk-form-stacked uk-grid-small uk-grid" uk-grid>
+		    <div class="uk-width-1-1">   
+		        <div class="uk-form-controls">
+		            <input class="uk-input" id="form-s-email" type="email" placeholder="Електронна пошта">
+		        </div>
+		        <label class="uk-form-label" for="form-s-email"></label>
+		    </div>
+
+		    <div class="uk-width-1-1">
+		        <div class="uk-form-controls">
+		            <input class="uk-input" id="form-s-password" type="password" placeholder="Пароль">
+		        </div>
+		        
+		    </div>
+
+	        <div class="uk-width-1-1 uk-text-center">
+	            <button class="uk-button uk-width-small uk-button-secondary ">Увійти</button>
+	            <!--<span uk-spinner class="uk-spinner uk-icon"></span>-->
+	        </div>
+
+			<ul class="uk-list uk-margin-medium-top uk-text-small uk-width-1-1 ">
+				<li><a clas href="password.html">Нагадати пароль</a></li>
+				<li><a href="registration.html">Реєстрація</a></li>
+			</ul>
+		</form>
+	</div>
+</div>	

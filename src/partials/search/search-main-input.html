@@ -1,0 +1,11 @@
+	<form class="uk-search uk-search-default uk-width-expand@s uk-inline" action="javascript:void(0)" style="max-width: 640px" >
+			<span uk-search-icon="icon: search"></span>
+			<input id="quick-search" class="boundary-align uk-search-input" type="search" placeholder="товары, услуги, компании..." autocomplete="off" uk-scroll='duration: 500' uk-scroll>
+			{{> search-dropdown}}	
+	</form >
+
+<!--<script type="text/javascript">
+	UIkit.util.on('#quick-search', 'beforescroll', function () {
+	    UIkit.scroll('#quick-search').scrollTo('#search');
+	});
+</script>-->

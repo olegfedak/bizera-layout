@@ -1,0 +1,65 @@
+//
+// Component: Text
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+//
+// New
+//
+
+$text-meta-link-color:                           $text-meta-color !default;
+$text-meta-link-hover-color:                     $global-color !default;
+
+$text-xsmall-font-size:                           $global-xsmall-font-size !default;
+$text-xsmall-line-height:                          1.4 !default;
+
+
+// Style modifiers
+// ========================================================================
+
+// @mixin hook-text-lead(){}
+
+
+
+
+// Size modifiers
+// ========================================================================
+
+.uk-text-xsmall {
+    font-size: $text-xsmall-font-size;
+    line-height: $text-xsmall-line-height;
+    @if(mixin-exists(hook-text-small)) {@include hook-text-xsmall();}
+}
+
+.uk-text-medium {
+    font-size: $text-medium-font-size;
+    line-height: $text-medium-line-height;
+    @if(mixin-exists(hook-text-medium)) {@include hook-text-medium();}
+}
+
+// @mixin hook-text-small(){}
+
+// @mixin hook-text-large(){}
+
+
+// Background modifier
+// ========================================================================
+
+// @mixin hook-text-background(){}
+
+
+// Miscellaneous
+// ========================================================================
+
+// @mixin hook-text-misc(){}
+
+
+// Inverse
+// ========================================================================
+
+// @mixin hook-inverse-text-lead(){}
+// @mixin hook-inverse-text-meta(){}

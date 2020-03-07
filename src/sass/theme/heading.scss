@@ -1,0 +1,75 @@
+//
+// Component: Heading
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+$heading-primary-font-size:                      $global-xxlarge-font-size !default;
+$heading-primary-line-height:                    1.2 !default;
+
+$heading-primary-font-size-m:                    2.625rem !default; // 54px
+$heading-primary-line-height-m:                  1.1 !default;
+
+$heading-hero-font-size:                         4rem !default; // 64px
+$heading-hero-line-height:                       1.1 !default;
+
+$heading-hero-font-size-s:                       6rem !default; // 96px
+$heading-hero-line-height-s:                     1 !default;
+
+$heading-hero-font-size-m:                       8rem !default; // 128px
+$heading-hero-line-height-m:                     1 !default;
+
+
+
+
+// Primary
+// ========================================================================
+
+// @mixin hook-heading-primary(){}
+
+
+// Hero
+// ========================================================================
+
+// @mixin hook-heading-hero(){}
+
+
+// Divider
+// ========================================================================
+
+// @mixin hook-heading-divider(){}
+
+
+// Bullet
+// ========================================================================
+
+// @mixin hook-heading-bullet(){}
+
+
+// Line
+// ========================================================================
+
+// @mixin hook-heading-bullet(){}
+
+
+
+// Miscellaneous
+// ========================================================================
+
+// @mixin hook-heading-misc(){}
+
+
+// Inverse
+// ========================================================================
+
+// @mixin hook-inverse-heading-primary(){}
+
+// @mixin hook-inverse-heading-hero(){}
+
+// @mixin hook-inverse-heading-divider(){}
+
+// @mixin hook-inverse-heading-bullet(){}
+
+// @mixin hook-inverse-heading-line(){}
