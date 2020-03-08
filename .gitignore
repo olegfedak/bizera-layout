@@ -1,4 +1,5 @@
-/node_modules
-/gulp/deploy.js
-/dist
+.gitignore
+node_modules/
+gulp/deploy.js
+dist/
 aws.json
