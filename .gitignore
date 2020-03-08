@@ -1,0 +1,4 @@
+/node_modules
+/gulp/deploy.js
+/dist
+aws.json
