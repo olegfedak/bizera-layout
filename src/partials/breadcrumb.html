@@ -1,0 +1,13 @@
+<ul class="uk-container uk-list uk-text-xsmall">
+	{{#unlesspage 'category'}}
+		{{#ifpage 'category-in' 'product-list' 'product-page'}}
+			<li><a href="category.html">Все для пищевой промышленности</a></li>
+		{{/ifpage}}
+		{{#ifpage 'product-list' 'product-page'}}
+			<li><a href="category-in.html">Оборудование для пищевой промышленности</a></li>
+		{{/ifpage}}
+		{{#ifpage 'product-page'}}
+			<li><a href="product-list.html">Оборудование для мясного, колбасного производства</a></li>
+		{{/ifpage}}
+	{{/unlesspage}}
+</ul><!--/breadcrumb-->

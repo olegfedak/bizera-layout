@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>{{#unless meta-title}}{{title}}{{/unless}}{{meta-title}}</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="description" content="Bizera">
+		<link rel="stylesheet" href="css/app.css" />
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
+		<link rel="manifest" href="/img/icons/site.webmanifest">
+		<link rel="mask-icon" href="/img/icons/safari-pinned-tab.svg" color="#00aa6c">
+		<link rel="shortcut icon" href="/img/icons/favicon.ico">
+		<meta name="msapplication-TileColor" content="#00aa6c">
+		<meta name="msapplication-config" content="/img/icons/browserconfig.xml">
+		<meta name="theme-color" content="#ff0000">
+
+		<script src="js/uikit.min.js"></script>
+		<script src="js/uikit-icons.min.js"></script>	
+	</head>
+	<body>
+		{{#if header}}{{> header}}{{/if}}
+		{{#if adv-top}}{{> adv-top}}{{/if}}
+
+		<div uk-height-viewport="offset-top: true; offset-bottom: true">
+			<div class="uk-margin-top uk-margin-bottom uk-grid " style="max-width: 1200px; margin: 0 auto" >	
+				<div class="uk-width-expand@m uk-padding-remove-left uk-margin-bottom ">
+					
+					<div>
+						{{#if breadcrumb}}{{> breadcrumb}}{{/if}}
+						{{#if h1}}<h1 class="uk-container uk-margin">{{title}}</h1>{{/if}}
+						{{#if tab}}{{> tab}}{{/if}}
+						{{> body}}
+					</div>
+
+				</div>
+				
+				{{#if aside}}
+				<div class="uk-margin-auto uk-text-small ">	
+					{{> aside}}	
+				</div><!--/aside-->
+				{{/if}}
+
+			</div><!--/grid-->	
+		</div><!--/Content-->
+		{{#if adv-bottom}}{{> adv-bottom}}{{/if}}
+		{{> footer}}
+	</body>
+	
+</html>

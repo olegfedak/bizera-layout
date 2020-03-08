@@ -1,0 +1,36 @@
+<header class="uk-container-expand">
+	<nav class="uk-container uk-container-expand">
+		<div class="uk-flex uk-grid"  uk-grid>
+			<div class="uk-navbar-item uk-text-left uk-flex-first " >
+				<a href="./" data="Bizera">
+					<img src="img/bizera-logo.svg">
+				</a>
+			</div><!--/bizera-logo-->
+			
+			{{#if header-search}}
+			<div id="search" class=" uk-navbar-item uk-margin-remove-top uk-width-expand@s uk-flex-last uk-flex-first@s">
+				{{> search-main-input}}
+				
+			</div><!--/search-->
+			{{/if}}
+			
+			{{#if header-bar}}
+			<div class="uk-navbar-right uk-padding-remove-left">
+				<div class="uk-navbar-item">
+					<a href="registration.html">
+						<span uk-icon="icon: plus-circle" class="uk-icon uk-margin-small-right"></span>
+						<span class="uk-text-middle" style="display: inline-block">Добавити <br>компанію</span>
+					</a>
+				</div>
+
+				<div class="uk-navbar-item">
+					<a class="" href="signin.html">
+						<span class="uk-text-middle" style="display: inline-block">Вхід <br>у кабінет
+					</a>
+				</div><!--/log in-->
+			</div>
+			{{/if}}
+
+		</div><!--/grid navbar-->
+	</nav><!--/navbar container-->
+</header><!--/Header-->

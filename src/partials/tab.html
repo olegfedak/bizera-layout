@@ -1,0 +1,20 @@
+<div class="uk-container uk-flex uk-flex-wrap" style="margin-top:-10px">
+	<div class="uk-width-expand@s">
+		<ul class="uk-tab uk-margin-remove-bottom " >
+			<li {{#ifpage 'category' 'category-in' 'product-list'}} class="uk-active"{{/ifpage}}><a href="category-in.html">Товари та послуги</a></li>
+			<li {{#ifpage 'companies'}} class="uk-active"{{/ifpage}}><a href="companies.html">Компанії</a></li>
+			<li {{#ifpage 'events'}} class="uk-active"{{/ifpage}}><a href="events.html">Виставки</a></li>
+		</ul>
+	</div>
+	
+	{{#ifpage "product-list" "company-list"}}
+	<div class="uk-width-expand@s">
+		<ul class="uk-flex uk-tab uk-margin-remove-top">
+			<li class="uk-width-auto"><a class="uk-link-toggle uk-text-left" href="#modal-regions" uk-toggle>Регіони<span uk-icon="icon: triangle-down"></span></a></li>
+			<li class="uk-width-expand"> <a class="uk-text-right" href="category.html" ><span uk-icon="icon: bolt"></span>Запит усім компаніям</a></li>
+		</ul>
+	</div>
+	{{/ifpage}}
+	{{> modal-regions}}
+
+</div><!--/tab-->

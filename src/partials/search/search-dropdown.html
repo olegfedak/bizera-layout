@@ -1,0 +1,28 @@
+<div id="search-dropdown" class="uk-margin-remove-top uk-text-left uk-height-auto" uk-dropdown="mode: click; pos: bottom-justify; boundary: .boundary-align; boundary-align: true; animation: uk-animation-slide-right-small; duration: 70" uk-overflow-auto>
+	<ul  class="uk-nav uk-navbar-dropdown-nav" style="font-size:15px" >
+		<li {{#ifpage 'index'}} class="uk-active" {{/ifpage}}><a href="">01. Головна</a></li>
+		<li {{#ifpage 'category'}} class="uk-active" {{/ifpage}}><a href="category.html">02. Категорія</a></li>
+		<li {{#ifpage 'category-in'}} class="uk-active" {{/ifpage}}><a href="category-in.html">03. Підкатегорія</a></li>
+		<li {{#ifpage 'product-list'}} class="uk-active" {{/ifpage}}><a href="product-list.html">04. Список товарів</a></li>
+		<li {{#ifpage 'product-page'}} class="uk-active" {{/ifpage}}><a href="product-page.html">05. Товар</a></li>
+		<li {{#ifpage 'registration'}} class="uk-active" {{/ifpage}}><a href="registration.html">06. Реєстрація</a></li>
+		<li {{#ifpage 'registration-request'}} class="uk-active" {{/ifpage}}><a href="registration-request.html">07. Запрос на реєстрацію</a></li>
+		<li {{#ifpage 'signin'}} class="uk-active"{{/ifpage}}><a href="signin.html">08. Авторизація</a></li>
+		<li {{#ifpage 'password'}} class="uk-active"{{/ifpage}}><a href="signin.html">09. Відновлення паролю</a></li>
+		<li {{#ifpage 'company-list' }} class="uk-active" {{/ifpage}}><a href="">10. Список компаній</a></li>
+		<li {{#ifpage 'company'}} class="uk-active"{{/ifpage}}><a href="">11. Компанія</a></li>
+		<li {{#ifpage 'exhibition-list'}} class="uk-active"{{/ifpage}}><a href="">12. Список виставок</a></li>
+		<li {{#ifpage 'exhibition'}} class="uk-active"{{/ifpage}}><a href="">13. Виставка</a></li>
+		<li {{#ifpage 'news-list'}} class="uk-active"{{/ifpage}}><a href="">14. Cписок новин</a></li>
+		<li {{#ifpage 'news'}} class="uk-active"{{/ifpage}}><a href="">15. Новина</a></li>
+		<li {{#ifpage 'articles-list'}} class="uk-active"{{/ifpage}}><a href="">14. Список статтей</a></li>
+		<li {{#ifpage 'article'}} class="uk-active"{{/ifpage}}><a href="">16. Стаття</a></li>
+		<li {{#ifpage 'about'}} class="uk-active"{{/ifpage}}><a href="about.html">17. Про проект</a></li>
+		<li {{#ifpage 'agreement'}} class="uk-active"{{/ifpage}}><a href="">18. Користувацька угода</a></li>
+		<li {{#ifpage 'support'}} class="uk-active"{{/ifpage}}><a href="">19. Підтримка користувачів</a></li>
+		<li {{#ifpage 'services'}} class="uk-active"{{/ifpage}}><a href="">20. Платні пакети послуг</a></li>
+		<li {{#ifpage 'advertising'}} class="uk-active"{{/ifpage}}><a href="">21. Реклама на сайті</a></li>
+		<li {{#ifpage '404'}} class="uk-active"{{/ifpage}}><a href="404.html">22. Помилка 404</a></li>
+		<li {{#ifpage 'search-resaults'}} class="uk-active" {{/ifpage}}><a href="404.html">23. Результат пошуку</a></li>
+	</ul>
+</div>

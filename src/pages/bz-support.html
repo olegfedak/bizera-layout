@@ -1,0 +1,45 @@
+---
+meta-title: Підтримка користувачів
+title: Часто задáвані питання
+layout: default
+header: true
+header-search: false
+header-bar: true
+adv-top: false
+adv-bottom: true
+footer: true
+
+---
+<div class="uk-section">
+	<div class="uk-container uk-container-small">
+        <h1 class="uk-margin uk-text-center">{{title}}</h1>
+        <ul class="uk-margin-large-bottom" uk-accordion>
+            <li>
+                <hr>
+                <a class="uk-accordion-title" href="#">Я зареєструвався на сайті, заповнив дані про компанію та додав товари, але не можу знайти свою компанію і товари на сайті?</a>
+                <div class="uk-accordion-content">
+                    <p>За замовчуванням компанія і її товари переходять в видимий режим через 48 годин після реєстрації на сайті після перевірки даних адміністратором.</p>
+                </div>
+            </li>
+            <li>
+                <hr>
+                <a class="uk-accordion-title" href="#">Я зареєструвався на сайті, заповнив дані про компанію, 48 годин вже пройшли, але не можу знайти свою компанію на сайті?</a>
+                <div class="uk-accordion-content">
+                    <p>Якщо ви не додали жодного товару, ваша компанія не сайті не буде видно навіть після того, як перейде в видимий режим. Компанія потрапляє в Каталог компаній тих категорій, до яких прив'язані внесені товари.</p>
+                </div>
+            </li>
+            <li>
+                <hr>
+                <a class="uk-accordion-title" href="#">Я не можу зберегти заповнені дані про компанію, не зберігається доданий товар і т.д.?</a>
+                <div class="uk-accordion-content">
+                    <p>Якщо ви працюєте в браузері Internet Explorer і у вас виникають технічні проблеми, перш за все спробуйте змінити браузер.</p>
+                </div>
+            </li>
+            <hr>
+        </ul>
+			
+		<p>Якщо ви не знайшли відповідь на своє питання в списку FAQ, ви можете написати лист в службу підтримки. Просимо вас максимально докладно описати виниклу проблему, вказати, що саме послужило причиною її виникнення.</p>
+        <p class="uk-text-center"><button class="uk-button uk-button-default" type="button" uk-toggle="target: #modal-mail-administration">Задати своє запитання</button></p>
+        {{> modal-mail-administration}}
+    </div>
+</div>
